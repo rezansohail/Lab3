@@ -1,0 +1,13 @@
+/* Minimal custom styles */
+body {
+  scroll-behavior: smooth;
+}
+
+#hero {
+  background: url('https://via.placeholder.com/1200x600') center/cover no-repeat;
+  color: #fff;
+}
+
+#hero h1 span {
+  color: #ffc107;
+}

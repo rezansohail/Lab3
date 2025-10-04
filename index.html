@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .navbar { font-size: 1.3rem; }
+    .navbar-nav { margin-right: auto; }
+    .navbar .nav-link {
+      font-weight: bold;
+      color: #dcdcdc !important;
+      padding: 0.5rem;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      margin: 8px 15px;
+    }
+    .navbar .nav-link.active {
+      color: #fff !important;
+      background: rgba(27, 22, 22, 0.336);
+      box-shadow: 0 11px 30px #5d0d15;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#hero">Hello!</a>
+        <a class="nav-link" href="#about">About Me</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="hero" class="d-flex min-vh-100 align-items-center" 
+     style="background: url('images/hero2.jpg') center center / cover no-repeat; 
+            background-blend-mode: darken;
+            width: 100%;">
+  <div class="container text-light text-start ms-5">
+    <h1 class="fw-bolder" style="font-size: 7rem;">Hi,</h1>
+    <h2 class="fw-bold" style="font-size: 5rem;">I am Rezan :)</h2>
+    <h4 class="fw-bold" style="font-size: 1.2rem;">AND THIS IS MY PORTFOLIO!</h4>
+    <p class="mt-4" style="font-size: 1.2rem; max-width: 800px;">
+      I am a motivated Front-End Developer and Computer Science student who loves bringing ideas to life
+      through clean design, interactive interfaces, and meaningful user experiences. </p>
+  </div>
+</div>
+
+<section id="about" class="d-flex align-items-center min-vh-100" style="background: #c7c1c7;">
+  <div class="container" data-aos="fade-right">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="images/aboutme.jpg" class="img-fluid rounded shadow" alt="About Me">
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bolder" style="font-size:4rem; color: #5d0d15;">About Me</h2><br><br>
+        <p class="mb-4" style="font-size: 1.5rem; color: black;">
+          Hello! I’m a passionate developer who enjoys crafting modern, responsive, and user-friendly websites using the latest technologies. I believe in writing clean code and creating designs that connect with people.
+        </p><br>
+        <h5 class="fw-bold mb-3" style="font-size: 2rem; color: black;">Skills</h5>
+        <p style="color: black; font-size: 1.3rem;">
+          <i class="fa-solid fa-code me-2" style="font-size: 1.6rem; color: #5d0d15;"></i> 
+          HTML, CSS, JavaScript, Bootstrap
+        </p>
+        <p style="color: black; font-size: 1.3rem;">
+          <i class="fa-solid fa-database me-2" style="font-size: 1.6rem; color: #5d0d15; margin-left: 4px;"></i> 
+          MySQL, PHP
+        </p>
+        <p style="color: black; font-size: 1.3rem;">
+          <i class="fa-solid fa-laptop-code me-2" style="font-size: 1.6rem; color: #5d0d15;"></i> 
+          Python, Java
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="py-5 min-vh-100 d-flex align-items-center" style="background: black;"> 
+  <div class="container" data-aos="zoom-in">
+    <h2 class="text-center fw-bolder mb-5" style="font-size:3.5rem; color: white;">My Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm" style="transition: 0.3s; border: none; background: #111;">
+          <img src="images/bloodbank.jpg" class="card-img-top" alt="ANRAZ Blood Bank">
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-size: 1.8rem; color: white;">ANRAZ Blood Bank</h5>
+            <p class="card-text" style="font-size: 1.2rem; color: #ddd;">
+              A web-based PHP & MySQL system for managing blood bank operations.  
+              Features include inventory tracking, patient records, test bookings,  
+              counter operations, and automated reports for admins.
+            </p>
+            <a href="#project1" class="btn btn-outline-danger btn-sm">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm" style="transition: 0.3s; border: none; background: #111;">
+          <img src="images/library.jpg.png" class="card-img-top" alt="Museum Management System">
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-size: 1.8rem; color: white;">Museum Management System</h5>
+            <p class="card-text" style="font-size: 1.2rem; color: #ddd;">
+              An OOP-based system with 13 classes covering staff, artifacts,  
+              tickets, exhibits, and visitors. Includes separate GUIs for  
+              Admin (employee & exhibit control) and Visitors (tickets & gallery view).  
+            </p>
+            <a href="#project2" class="btn btn-outline-danger btn-sm">View More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm" style="transition: 0.3s; border: none; background: #111;">
+          <img src="images/art1.jpg" class="card-img-top" alt="SOZE Art Gallery Website">
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-size: 1.8rem; color: white;">SOZE Art Gallery</h5>
+            <p class="card-text" style="font-size: 1.2rem; color: #ddd;">
+              A responsive HTML & CSS website featuring artists, events,  
+              and image-based navigation. Includes art reviews,  
+              multiple pages, transitions, and an elegant UI for art lovers.
+            </p>
+            <a href="#project3" class="btn btn-outline-danger btn-sm">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project1" class="min-vh-100 d-flex align-items-center" style="background: #c7c1c7; color: black;">
+  <div class="container">
+    <h2 class="fw-bolder mb-4" style="font-size: 2.5rem; color: #5d0d15;">My Project 1: ANRAZ Blood Bank</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <p style="font-size: 1.2rem;">
+          The Anraz Blood Bank Management System is a web-based application designed to enhance efficiency of blood bank operations, specifically for administrative management. Developed using PHP and MySQL, this system simplifies the process of managing blood bank functions, ensuring accurate data storage and quick access to vital information.  
+          Admins can manage inventory, patient records, test bookings, counter operations, and generate management reports. Forms for adding and updating records make it simple to input and modify data, while the report section helps in internal analysis and decision-making.  
+          The system prioritizes accuracy, smooth operation, and timely availability of data, making blood bank management efficient and reliable.
+        </p>
+      </div>
+      <div class="col-md-4 text-end">
+        <img src="images/bloodbank.jpg" class="img-fluid mb-3" alt="ANRAZ Blood Bank">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project2" class="min-vh-100 d-flex align-items-center" style="background: #c7c1c7; color: black;">
+  <div class="container">
+    <h2 class="fw-bolder mb-4" style="font-size: 2.5rem; color: #5d0d15;">My Project 2: Museum Management System</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <p style="font-size: 1.2rem;">
+          This project represents the foundation of a museum management system through interrelated classes, implementing all four OOP pillars: Encapsulation, Polymorphism, Abstraction, and Inheritance. It covers employees, exhibits, artifacts, tickets, schedules, and visitors.  
+          The system has 13 classes, including an abstract class, with separate GUIs for Admin and Visitors. Admin can manage employees (tour guides, volunteers, security, janitors) and exhibits, while visitors can buy tickets, view available artifacts, and interact with the system.  
+          With MS Access database connectivity, visitor details are saved and accessible to Admin. The project aims to provide a modern, user-friendly platform to preserve and present cultural artifacts efficiently.
+        </p>
+      </div>
+      <div class="col-md-4 text-end">
+        <img src="images/library.jpg.png" class="img-fluid mb-3" alt="Museum Management">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project3" class="min-vh-100 d-flex align-items-center" style="background: #c7c1c7; color: black;">
+  <div class="container">
+    <h2 class="fw-bolder mb-4" style="font-size: 2.5rem; color: #5d0d15;">My Project 3: SOZE Art Gallery</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <p style="font-size: 1.2rem;">
+          SOZE Art Gallery is a responsive HTML and CSS-based website featuring a navbar, multiple linked pages, artists, events, reviews, and a gallery of artworks. Images on the homepage serve as navigation links, each leading to detailed reviews.  
+          CSS is used extensively for styling, transitions, and layout design to create an elegant and engaging user interface. The gallery offers 9 images on the homepage, with separate review pages for each art piece.  
+          The goal of this project is to provide art lovers with an interactive platform to explore and appreciate artwork in a visually appealing and user-friendly environment.
+        </p>
+      </div>
+      <div class="col-md-4 text-end">
+        <img src="images/art1.jpg" class="img-fluid mb-3" alt="SOZE Art Gallery">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="d-flex min-vh-100 align-items-center" 
+         style="background: url('images/contact.jpg') center center / cover no-repeat; 
+                background-blend-mode: darken;
+                width: 100%;">
+  <div class="container text-light" data-aos="fade-up">
+    <h2 class="text-center fw-bolder mb-5" style="font-size: 4rem;">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control bg-white text-dark" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control bg-white text-dark" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control bg-white text-dark" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-outline-light px-4 py-2 fw-bold" style="font-size: 1.2rem;">Send</button>
+          </div>
+        </form>
+        <div class="text-center mt-5">
+          <p class="fw-semibold" style="font-size: 1.2rem;">Or contact me via:</p>
+          <a href="mailto:rezan.sohail01@gmail.com" class="text-light me-4" style="font-size: 2rem; text-decoration: none;">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+          <a href="https://www.linkedin.com/in/rezan-sohail-9b03a6203/" target="_blank" class="text-light me-4" style="font-size: 2rem; text-decoration: none;">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/rezansohail" target="_blank" class="text-light" style="font-size: 2rem; text-decoration: none;">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-light text-center py-3">
+  <p>© 2025 My Portfolio | Built with <i class="fa-brands fa-bootstrap"></i> Bootstrap</p>
+  <div>
+    <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="text-light"><i class="fab fa-github"></i></a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
